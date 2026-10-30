@@ -335,26 +335,37 @@ export function calculatePercentChange(current: number, previous: number): numbe
 }
 
 export function exportToCSV(data: Record<string, unknown>[], filename: string): void {
-  if (data.length === 0) return;
+  if (!data || data.length === 0) {
+    console.warn('exportToCSV: No data provided');
+    return;
+  }
 
   const headers = Object.keys(data[0]);
   const csvContent = [
     headers.join(','),
     ...data.map(row =>
       headers.map(h => {
-        const val = row[h];
-        if (typeof val === 'string' && val.includes(',')) {
-          return `"${val}"`;
+        let val = row[h];
+        if (val === null || val === undefined) return '';
+        const strVal = String(val);
+        if (strVal.includes(',') || strVal.includes('"') || strVal.includes('\n')) {
+          return `"${strVal.replace(/"/g, '""')}"`;
         }
-        return String(val);
+        return strVal;
       }).join(',')
     ),
-  ].join('\n');
+  ].join('\r\n');
 
-  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
-  link.href = URL.createObjectURL(blob);
-  link.download = `${filename}.csv`;
+  link.setAttribute('href', url);
+  link.setAttribute('download', `${filename}.csv`);
+  link.style.visibility = 'hidden';
+  document.body.appendChild(link);
   link.click();
-  URL.revokeObjectURL(link.href);
+  setTimeout(() => {
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }, 200);
 }

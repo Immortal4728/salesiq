@@ -133,8 +133,12 @@ export default function Home() {
     setSelectedRegion('');
   };
 
+  const [exporting, setExporting] = useState(false);
+
   const handleExportCSV = async () => {
+    if (exporting) return;
     try {
+      setExporting(true);
       const params = new URLSearchParams();
       if (startDate) params.set('startDate', startDate);
       if (endDate) params.set('endDate', endDate);
@@ -143,12 +147,18 @@ export default function Home() {
       params.set('export', 'true');
 
       const res = await fetch(`/api/analytics?${params.toString()}`);
+      if (!res.ok) throw new Error('Export request failed');
       const json = await res.json();
-      if (json.records) {
-        exportToCSV(json.records, `salesiq-sql-export-${new Date().toISOString().split('T')[0]}`);
+      if (json.records && json.records.length > 0) {
+        exportToCSV(json.records, `salesiq-data-${new Date().toISOString().split('T')[0]}`);
+      } else {
+        alert('No records found for the selected filters.');
       }
     } catch (err) {
       console.error('Export error:', err);
+      alert('Unable to export CSV. Please check the server logs.');
+    } finally {
+      setExporting(false);
     }
   };
 
@@ -175,10 +185,20 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <button
               onClick={handleExportCSV}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-colors"
+              disabled={exporting}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
-              <Download size={14} />
-              Export CSV
+              {exporting ? (
+                <>
+                  <Loader2 size={14} className="animate-spin text-blue-600" />
+                  <span>Exporting...</span>
+                </>
+              ) : (
+                <>
+                  <Download size={14} />
+                  <span>Export CSV</span>
+                </>
+              )}
             </button>
             <div className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
               {loading ? (
