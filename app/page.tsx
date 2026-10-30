@@ -48,7 +48,6 @@ import {
   formatNumber,
   exportToCSV
 } from '@/lib/analytics';
-import { getSalesData } from '@/lib/data';
 import { parseSalesCSV } from '@/lib/csvParser';
 
 const CATEGORY_COLORS = ['#2563eb', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4'];
@@ -56,27 +55,30 @@ const CATEGORY_COLORS = ['#2563eb', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', 
 export default function Home() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // In-memory data state: defaults to sample data, or switches to uploaded CSV
-  const defaultData = useMemo(() => getSalesData(), []);
-  const [activeRecords, setActiveRecords] = useState<SalesRecord[]>(defaultData);
+  // Starts with zero data in memory
+  const [activeRecords, setActiveRecords] = useState<SalesRecord[]>([]);
   const [uploadedFileName, setUploadedFileName] = useState<string | null>(null);
   const [uploadError, setUploadError] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState<boolean>(false);
 
-  // Derive available categories and regions dynamically from active dataset
+  const hasData = activeRecords.length > 0;
+
+  // Categories & regions dynamically derived from uploaded dataset
   const availableCategories = useMemo(() => {
+    if (!hasData) return [];
     return Array.from(new Set(activeRecords.map(r => r.category).filter(Boolean))).sort();
-  }, [activeRecords]);
+  }, [activeRecords, hasData]);
 
   const availableRegions = useMemo(() => {
+    if (!hasData) return [];
     return Array.from(new Set(activeRecords.map(r => r.region).filter(Boolean))).sort();
-  }, [activeRecords]);
+  }, [activeRecords, hasData]);
 
   const dateBounds = useMemo(() => {
-    if (activeRecords.length === 0) return { min: '', max: '' };
+    if (!hasData) return { min: '', max: '' };
     const dates = activeRecords.map(r => r.orderDate).filter(Boolean).sort();
     return { min: dates[0] || '', max: dates[dates.length - 1] || '' };
-  }, [activeRecords]);
+  }, [activeRecords, hasData]);
 
   // Filters state
   const [startDate, setStartDate] = useState('');
@@ -94,23 +96,40 @@ export default function Home() {
     regions: selectedRegion ? [selectedRegion] : [],
   }), [startDate, endDate, selectedCategory, selectedRegion, dateBounds]);
 
-  // Filtered dataset in browser memory
+  // Filtered dataset
   const filteredData = useMemo(() => {
+    if (!hasData) return [];
     return filterData(activeRecords, filters);
-  }, [activeRecords, filters]);
+  }, [activeRecords, filters, hasData]);
 
   // Previous period data for KPI comparisons
   const prevData = useMemo(() => {
+    if (!hasData) return [];
     return getPreviousPeriodData(activeRecords, filters);
-  }, [activeRecords, filters]);
+  }, [activeRecords, filters, hasData]);
 
   // Pure in-memory metric calculations
-  const kpis = useMemo(() => calculateKPIs(filteredData, prevData), [filteredData, prevData]);
-  const monthlySales = useMemo(() => getMonthlySales(filteredData), [filteredData]);
-  const categoryData = useMemo(() => getCategoryData(filteredData), [filteredData]);
-  const regionData = useMemo(() => getRegionData(filteredData), [filteredData]);
-  const productData = useMemo(() => getProductData(filteredData), [filteredData]);
-  const businessInsights = useMemo(() => generateBusinessInsights(filteredData), [filteredData]);
+  const kpis = useMemo(() => {
+    if (!hasData) {
+      return {
+        totalRevenue: 0,
+        totalProfit: 0,
+        totalOrders: 0,
+        avgOrderValue: 0,
+        prevRevenue: 0,
+        prevProfit: 0,
+        prevOrders: 0,
+        prevAvgOrderValue: 0,
+      };
+    }
+    return calculateKPIs(filteredData, prevData);
+  }, [filteredData, prevData, hasData]);
+
+  const monthlySales = useMemo(() => (hasData ? getMonthlySales(filteredData) : []), [filteredData, hasData]);
+  const categoryData = useMemo(() => (hasData ? getCategoryData(filteredData) : []), [filteredData, hasData]);
+  const regionData = useMemo(() => (hasData ? getRegionData(filteredData) : []), [filteredData, hasData]);
+  const productData = useMemo(() => (hasData ? getProductData(filteredData) : []), [filteredData, hasData]);
+  const businessInsights = useMemo(() => (hasData ? generateBusinessInsights(filteredData) : []), [filteredData, hasData]);
 
   const topSellingProducts = useMemo(() => {
     return [...productData].slice(0, 5);
@@ -143,11 +162,11 @@ export default function Home() {
         return;
       }
 
-      // Update active in-memory dataset
+      // Update in-memory dataset
       setActiveRecords(result.data);
       setUploadedFileName(file.name);
 
-      // Reset filters to the new file's date bounds
+      // Initialize date filters to the uploaded file's date range
       const dates = result.data.map(r => r.orderDate).filter(Boolean).sort();
       setStartDate(dates[0] || '');
       setEndDate(dates[dates.length - 1] || '');
@@ -161,16 +180,16 @@ export default function Home() {
     }
   };
 
-  // Reset to default sample dataset
-  const handleResetToSample = () => {
-    setActiveRecords(defaultData);
+  // Clear uploaded data
+  const handleClearData = () => {
+    setActiveRecords([]);
     setUploadedFileName(null);
     setUploadError(null);
-    const dates = defaultData.map(r => r.orderDate).filter(Boolean).sort();
-    setStartDate(dates[0] || '');
-    setEndDate(dates[dates.length - 1] || '');
+    setStartDate('');
+    setEndDate('');
     setSelectedCategory('');
     setSelectedRegion('');
+    if (fileInputRef.current) fileInputRef.current.value = '';
   };
 
   const hasActiveFilters = Boolean(
@@ -190,7 +209,7 @@ export default function Home() {
   // Export filtered data to CSV
   const handleExportCSV = () => {
     if (filteredData.length === 0) {
-      alert('No records available to export for the selected filters.');
+      alert('No records available to export.');
       return;
     }
 
@@ -215,7 +234,7 @@ export default function Home() {
 
     const filename = uploadedFileName
       ? `filtered-${uploadedFileName.replace(/\.csv$/i, '')}`
-      : `salesiq-filtered-report-${new Date().toISOString().split('T')[0]}`;
+      : `salesiq-export-${new Date().toISOString().split('T')[0]}`;
 
     exportToCSV(exportRows, filename);
   };
@@ -246,12 +265,12 @@ export default function Home() {
                     <FileSpreadsheet size={11} /> {uploadedFileName}
                   </span>
                 ) : (
-                  <span className="text-xs px-2 py-0.5 rounded bg-blue-50 text-blue-700 font-medium border border-blue-100 flex items-center gap-1">
-                    Sample Dataset
+                  <span className="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 font-medium border border-gray-200">
+                    No File Loaded
                   </span>
                 )}
               </div>
-              <p className="text-xs text-gray-500">In-Memory Sales Analytics & Business Intelligence Dashboard</p>
+              <p className="text-xs text-gray-500">Sales Analytics & Business Intelligence Dashboard</p>
             </div>
           </div>
 
@@ -266,30 +285,32 @@ export default function Home() {
               <span>{isUploading ? 'Parsing...' : 'Upload CSV'}</span>
             </button>
 
-            {/* Reset to Sample if user uploaded a file */}
-            {uploadedFileName && (
+            {/* Clear Data Button */}
+            {hasData && (
               <button
-                onClick={handleResetToSample}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-colors"
-                title="Reset to default sample dataset"
+                onClick={handleClearData}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-600 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-colors cursor-pointer"
+                title="Clear uploaded data"
               >
                 <Trash2 size={13} className="text-gray-400" />
-                <span>Reset Data</span>
+                <span>Clear</span>
               </button>
             )}
 
             {/* Export CSV Button */}
-            <button
-              onClick={handleExportCSV}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-colors"
-            >
-              <Download size={14} />
-              <span>Export CSV</span>
-            </button>
+            {hasData && (
+              <button
+                onClick={handleExportCSV}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-colors cursor-pointer"
+              >
+                <Download size={14} />
+                <span>Export CSV</span>
+              </button>
+            )}
 
-            {/* Total Records Counter */}
+            {/* Records Counter */}
             <div className="text-xs text-gray-500 bg-gray-50 border border-gray-200 px-2.5 py-1.5 rounded-lg flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-500" />
+              <span className={`w-2 h-2 rounded-full ${hasData ? 'bg-emerald-500' : 'bg-gray-400'}`} />
               <span>
                 <strong className="text-gray-800">{filteredData.length}</strong> / {activeRecords.length} records
               </span>
@@ -309,15 +330,35 @@ export default function Home() {
                 <strong className="font-semibold">Unable to process uploaded file:</strong>
                 <p className="mt-0.5 leading-relaxed">{uploadError}</p>
                 <p className="mt-1 text-[11px] text-red-600">
-                  Tip: Ensure your CSV has headers like <code>Order Date</code>, <code>Sales</code>, and optional columns like <code>Category</code>, <code>Region</code>, <code>Product Name</code>, and <code>Profit</code>.
+                  Tip: Ensure your CSV contains columns for <code>Date</code> and <code>Sales</code>.
                 </p>
               </div>
             </div>
             <button
               onClick={() => setUploadError(null)}
-              className="text-red-400 hover:text-red-700"
+              className="text-red-400 hover:text-red-700 cursor-pointer"
             >
               <X size={15} />
+            </button>
+          </div>
+        )}
+
+        {/* Empty State Banner (Shown when no file is uploaded) */}
+        {!hasData && !uploadError && (
+          <div className="p-8 bg-white border border-dashed border-gray-300 rounded-2xl flex flex-col items-center justify-center text-center shadow-xs">
+            <div className="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-3">
+              <Upload size={22} />
+            </div>
+            <h2 className="text-base font-semibold text-gray-900">Upload a CSV file to get started</h2>
+            <p className="text-xs text-gray-500 mt-1 max-w-md">
+              Select any sales or orders CSV file to automatically populate all KPIs, sales trajectories, product performance rankings, and business insights.
+            </p>
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="mt-4 inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-sm transition-colors cursor-pointer"
+            >
+              <Upload size={14} />
+              <span>Select CSV File</span>
             </button>
           </div>
         )}
@@ -328,7 +369,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <CheckCircle2 size={16} className="text-emerald-600" />
               <span>
-                Active custom dataset: <strong>{uploadedFileName}</strong> ({activeRecords.length} total rows parsed in browser memory).
+                Active dataset: <strong>{uploadedFileName}</strong> ({activeRecords.length} records parsed).
               </span>
             </div>
             <span className="text-[11px] text-emerald-600">
@@ -337,8 +378,8 @@ export default function Home() {
           </div>
         )}
 
-        {/* Filters Section */}
-        <section className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs">
+        {/* Filters Section (Disabled when no data) */}
+        <section className={`bg-white p-4 rounded-xl border border-gray-200 shadow-xs ${!hasData ? 'opacity-50 pointer-events-none' : ''}`}>
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex flex-wrap items-center gap-3 text-sm">
               <div className="flex items-center gap-1.5 text-gray-600 font-medium">
@@ -351,20 +392,22 @@ export default function Home() {
                 <Calendar size={15} className="text-gray-400" />
                 <input
                   type="date"
+                  disabled={!hasData}
                   value={startDate || dateBounds.min}
                   min={dateBounds.min}
                   max={endDate || dateBounds.max}
                   onChange={(e) => setStartDate(e.target.value)}
-                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 disabled:bg-gray-100"
                 />
                 <span className="text-xs text-gray-400">to</span>
                 <input
                   type="date"
+                  disabled={!hasData}
                   value={endDate || dateBounds.max}
                   min={startDate || dateBounds.min}
                   max={dateBounds.max}
                   onChange={(e) => setEndDate(e.target.value)}
-                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 disabled:bg-gray-100"
                 />
               </div>
 
@@ -372,9 +415,10 @@ export default function Home() {
               <div className="flex items-center gap-1.5">
                 <span className="text-xs text-gray-500">Category:</span>
                 <select
+                  disabled={!hasData}
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 disabled:bg-gray-100"
                 >
                   <option value="">All Categories</option>
                   {availableCategories.map(cat => (
@@ -387,9 +431,10 @@ export default function Home() {
               <div className="flex items-center gap-1.5">
                 <span className="text-xs text-gray-500">Region:</span>
                 <select
+                  disabled={!hasData}
                   value={selectedRegion}
                   onChange={(e) => setSelectedRegion(e.target.value)}
-                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="px-2.5 py-1 text-xs border border-gray-200 rounded-lg bg-gray-50 text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 disabled:bg-gray-100"
                 >
                   <option value="">All Regions</option>
                   {availableRegions.map(reg => (
@@ -418,7 +463,7 @@ export default function Home() {
             <div>
               <p className="text-xs font-medium text-gray-500">Total Revenue</p>
               <h3 className="text-2xl font-bold text-gray-900 mt-1">{formatCurrency(kpis.totalRevenue)}</h3>
-              <p className="text-xs text-gray-400 mt-1">Aggregated sales volume</p>
+              <p className="text-xs text-gray-400 mt-1">{hasData ? 'Aggregated sales volume' : 'No data loaded'}</p>
             </div>
             <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600">
               <DollarSign size={22} />
@@ -444,7 +489,7 @@ export default function Home() {
             <div>
               <p className="text-xs font-medium text-gray-500">Total Orders</p>
               <h3 className="text-2xl font-bold text-gray-900 mt-1">{formatNumber(kpis.totalOrders)}</h3>
-              <p className="text-xs text-gray-400 mt-1">Distinct order transactions</p>
+              <p className="text-xs text-gray-400 mt-1">{hasData ? 'Distinct order transactions' : '0 orders'}</p>
             </div>
             <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600">
               <ShoppingCart size={22} />
@@ -456,7 +501,7 @@ export default function Home() {
             <div>
               <p className="text-xs font-medium text-gray-500">Average Order Value</p>
               <h3 className="text-2xl font-bold text-gray-900 mt-1">{formatCurrency(kpis.avgOrderValue)}</h3>
-              <p className="text-xs text-gray-400 mt-1">Revenue per order</p>
+              <p className="text-xs text-gray-400 mt-1">{hasData ? 'Revenue per order' : '$0 per order'}</p>
             </div>
             <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600">
               <TrendingUp size={22} />
@@ -505,8 +550,8 @@ export default function Home() {
                   </AreaChart>
                 </ResponsiveContainer>
               ) : (
-                <div className="h-full flex items-center justify-center text-xs text-gray-400">
-                  No monthly data matches the current filters.
+                <div className="h-full flex items-center justify-center text-xs text-gray-400 border border-dashed border-gray-200 rounded-lg">
+                  {hasData ? 'No monthly data matches the selected filters.' : 'Upload a CSV file to view revenue trend.'}
                 </div>
               )}
             </div>
@@ -544,8 +589,8 @@ export default function Home() {
                   </LineChart>
                 </ResponsiveContainer>
               ) : (
-                <div className="h-full flex items-center justify-center text-xs text-gray-400">
-                  No monthly profit data available.
+                <div className="h-full flex items-center justify-center text-xs text-gray-400 border border-dashed border-gray-200 rounded-lg">
+                  {hasData ? 'No profit records available.' : 'Upload a CSV file to view profit trajectory.'}
                 </div>
               )}
             </div>
@@ -584,8 +629,8 @@ export default function Home() {
                   </BarChart>
                 </ResponsiveContainer>
               ) : (
-                <div className="h-full flex items-center justify-center text-xs text-gray-400">
-                  No category records found.
+                <div className="h-full flex items-center justify-center text-xs text-gray-400 border border-dashed border-gray-200 rounded-lg">
+                  {hasData ? 'No category records found.' : 'Upload a CSV file to view category breakdown.'}
                 </div>
               )}
             </div>
@@ -618,8 +663,8 @@ export default function Home() {
                   </BarChart>
                 </ResponsiveContainer>
               ) : (
-                <div className="h-full flex items-center justify-center text-xs text-gray-400">
-                  No regional records found.
+                <div className="h-full flex items-center justify-center text-xs text-gray-400 border border-dashed border-gray-200 rounded-lg">
+                  {hasData ? 'No regional records found.' : 'Upload a CSV file to view regional breakdown.'}
                 </div>
               )}
             </div>
@@ -671,8 +716,8 @@ export default function Home() {
                       ))
                     ) : (
                       <tr>
-                        <td colSpan={4} className="py-6 text-center text-gray-400">
-                          No product records available.
+                        <td colSpan={4} className="py-8 text-center text-gray-400">
+                          {hasData ? 'No product records found.' : 'Upload a CSV file to view product rankings.'}
                         </td>
                       </tr>
                     )}
@@ -718,8 +763,8 @@ export default function Home() {
                     </div>
                   ))
                 ) : (
-                  <div className="py-8 text-center text-xs text-gray-400">
-                    No business insights can be generated for this data slice.
+                  <div className="py-8 text-center text-xs text-gray-400 border border-dashed border-gray-200 rounded-lg">
+                    {hasData ? 'No business insights can be generated for this data slice.' : 'Upload a CSV file to generate automated business insights.'}
                   </div>
                 )}
               </div>
