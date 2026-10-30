@@ -1,0 +1,281 @@
+orderId,orderDate,shipDate,shipMode,customerId,customerName,segment,country,city,state,region,productId,category,subCategory,productName,sales,quantity,discount,profit
+ORD-2023-0001,2023-01-03,2023-01-07,Standard,CUS-001,Adrian Mitchell,Consumer,United States,New York,New York,East,TEC-PH-001,Technology,Phones,Apple iPhone 15 Pro,1199,2,0,299.75
+ORD-2023-0002,2023-01-05,2023-01-09,Second Class,CUS-002,Beth Crawford,Corporate,United States,Los Angeles,California,West,FUR-CH-001,Furniture,Chairs,Herman Miller Aeron Chair,1395,1,0.1,180.35
+ORD-2023-0003,2023-01-08,2023-01-10,First Class,CUS-003,Carlos Diaz,Consumer,United States,Chicago,Illinois,Central,OFF-PA-001,Office Supplies,Paper,Hammermill Premium Paper,48.5,5,0,22.3
+ORD-2023-0004,2023-01-10,2023-01-14,Standard,CUS-004,Diana Evans,Home Office,United States,Houston,Texas,Central,TEC-AC-001,Technology,Accessories,Logitech MX Master 3S,99.99,3,0.05,34.99
+ORD-2023-0005,2023-01-12,2023-01-15,Second Class,CUS-005,Edward Foster,Consumer,United States,Phoenix,Arizona,West,OFF-BI-001,Office Supplies,Binders,Avery Durable View Binder,24.99,10,0.2,5.6
+ORD-2023-0006,2023-01-15,2023-01-19,Standard,CUS-006,Fiona Grant,Corporate,United States,Philadelphia,Pennsylvania,East,TEC-CO-001,Technology,Copiers,Canon imageCLASS MF445dw,549,1,0,164.7
+ORD-2023-0007,2023-01-18,2023-01-22,Standard,CUS-007,George Harris,Consumer,United States,San Antonio,Texas,Central,FUR-TA-001,Furniture,Tables,Bush Cabot L-Shaped Desk,479.99,1,0.15,-23.4
+ORD-2023-0008,2023-01-20,2023-01-23,First Class,CUS-008,Hannah Irving,Home Office,United States,San Diego,California,West,OFF-ST-001,Office Supplies,Storage,Bankers Box Stor/Drawer,35.49,4,0,12.42
+ORD-2023-0009,2023-01-22,2023-01-26,Standard,CUS-009,Ivan Jackson,Consumer,United States,Dallas,Texas,Central,TEC-PH-002,Technology,Phones,Samsung Galaxy S23 Ultra,1099.99,1,0,241.99
+ORD-2023-0010,2023-01-25,2023-01-28,Second Class,CUS-010,Julia Kim,Corporate,United States,Jacksonville,Florida,South,OFF-EN-001,Office Supplies,Envelopes,Quality Park Clasp Envelope,18.75,8,0,8.43
+ORD-2023-0011,2023-01-28,2023-02-01,Standard,CUS-011,Kevin Lee,Consumer,United States,Columbus,Ohio,East,FUR-FU-001,Furniture,Furnishings,Safco Industrial Wire Shelving,210.98,2,0,52.74
+ORD-2023-0012,2023-01-30,2023-02-03,Standard,CUS-012,Laura Martinez,Home Office,United States,Charlotte,North Carolina,South,TEC-AC-002,Technology,Accessories,Apple AirPods Pro 2nd Gen,249,2,0,74.7
+ORD-2023-0013,2023-02-02,2023-02-06,Standard,CUS-013,Michael Norton,Consumer,United States,San Francisco,California,West,TEC-MA-001,Technology,Machines,Dell XPS 15 Laptop,1849.99,1,0.05,462.5
+ORD-2023-0014,2023-02-05,2023-02-08,First Class,CUS-014,Nancy Owens,Corporate,United States,Indianapolis,Indiana,Central,OFF-LA-001,Office Supplies,Labels,Avery Address Labels,14.99,6,0,7.04
+ORD-2023-0015,2023-02-08,2023-02-12,Standard,CUS-015,Oscar Palmer,Consumer,United States,Seattle,Washington,West,FUR-CH-002,Furniture,Chairs,Steelcase Leap V2 Chair,1189,1,0,297.25
+ORD-2023-0016,2023-02-10,2023-02-14,Standard,CUS-016,Patricia Quinn,Home Office,United States,Denver,Colorado,West,OFF-AP-001,Office Supplies,Appliances,Fellowes Shredder 99Ci,189.99,1,0.1,39.9
+ORD-2023-0017,2023-02-12,2023-02-15,Second Class,CUS-017,Quentin Reed,Consumer,United States,Nashville,Tennessee,South,TEC-PH-003,Technology,Phones,Google Pixel 7 Pro,899,1,0,197.78
+ORD-2023-0018,2023-02-15,2023-02-19,Standard,CUS-018,Rachel Smith,Corporate,United States,Boston,Massachusetts,East,FUR-BO-001,Furniture,Bookcases,Sauder Heritage Hill Bookcase,299.99,2,0,74.99
+ORD-2023-0019,2023-02-18,2023-02-22,Standard,CUS-019,Steven Torres,Consumer,United States,Atlanta,Georgia,South,OFF-AR-001,Office Supplies,Art,Prismacolor Premier Colored Pencils,39.99,3,0,17.99
+ORD-2023-0020,2023-02-20,2023-02-24,First Class,CUS-020,Teresa Underwood,Home Office,United States,Portland,Oregon,West,TEC-AC-003,Technology,Accessories,"Samsung 27"" 4K Monitor",349.99,1,0,91
+ORD-2023-0021,2023-02-23,2023-02-27,Standard,CUS-001,Adrian Mitchell,Consumer,United States,New York,New York,East,OFF-SU-001,Office Supplies,Supplies,Swingline Stapler,15.99,4,0,6.39
+ORD-2023-0022,2023-02-25,2023-03-01,Standard,CUS-002,Beth Crawford,Corporate,United States,Miami,Florida,South,FUR-TA-002,Furniture,Tables,HON Conference Table 8ft,1249,1,0.2,-62.45
+ORD-2023-0023,2023-02-28,2023-03-04,Standard,CUS-003,Carlos Diaz,Consumer,United States,Minneapolis,Minnesota,Central,TEC-CO-002,Technology,Copiers,Brother MFC-L2750DW,399.99,1,0,119.99
+ORD-2023-0024,2023-03-02,2023-03-06,Standard,CUS-004,Diana Evans,Home Office,United States,Austin,Texas,Central,TEC-MA-002,Technology,Machines,MacBook Air M2,1299,2,0,389.7
+ORD-2023-0025,2023-03-05,2023-03-08,First Class,CUS-005,Edward Foster,Consumer,United States,Detroit,Michigan,Central,OFF-PA-002,Office Supplies,Paper,HP Printer Paper 8.5x11,42.99,8,0,19.34
+ORD-2023-0026,2023-03-08,2023-03-12,Standard,CUS-006,Fiona Grant,Corporate,United States,Memphis,Tennessee,South,FUR-CH-003,Furniture,Chairs,Autonomous ErgoChair Pro,499,3,0.1,104.79
+ORD-2023-0027,2023-03-10,2023-03-14,Standard,CUS-007,George Harris,Consumer,United States,Baltimore,Maryland,East,OFF-BI-002,Office Supplies,Binders,Wilson Jones Heavy Duty Binder,19.49,6,0.1,3.89
+ORD-2023-0028,2023-03-12,2023-03-15,Second Class,CUS-008,Hannah Irving,Home Office,United States,Milwaukee,Wisconsin,Central,TEC-PH-004,Technology,Phones,OnePlus 11 5G,699.99,1,0,146.99
+ORD-2023-0029,2023-03-15,2023-03-19,Standard,CUS-009,Ivan Jackson,Consumer,United States,Las Vegas,Nevada,West,FUR-FU-002,Furniture,Furnishings,3M Ergonomic Monitor Stand,89.99,2,0,31.49
+ORD-2023-0030,2023-03-18,2023-03-22,Standard,CUS-010,Julia Kim,Corporate,United States,Oklahoma City,Oklahoma,Central,OFF-ST-002,Office Supplies,Storage,Sterilite Storage Bins Set,59.99,3,0.05,20.39
+ORD-2023-0031,2023-03-20,2023-03-23,First Class,CUS-011,Kevin Lee,Consumer,United States,Raleigh,North Carolina,South,TEC-AC-004,Technology,Accessories,Anker USB-C Hub 7-in-1,59.99,5,0,23.99
+ORD-2023-0032,2023-03-22,2023-03-26,Standard,CUS-012,Laura Martinez,Home Office,United States,Richmond,Virginia,South,FUR-TA-003,Furniture,Tables,IKEA BEKANT Standing Desk,549,1,0,109.8
+ORD-2023-0033,2023-03-25,2023-03-29,Standard,CUS-013,Michael Norton,Consumer,United States,Hartford,Connecticut,East,OFF-AP-002,Office Supplies,Appliances,Keurig K-Elite Coffee Maker,169.99,2,0.1,28.89
+ORD-2023-0034,2023-03-28,2023-04-01,Standard,CUS-014,Nancy Owens,Corporate,United States,Salt Lake City,Utah,West,TEC-MA-003,Technology,Machines,HP EliteBook 840 G9,1549,1,0,387.25
+ORD-2023-0035,2023-04-01,2023-04-05,Standard,CUS-015,Oscar Palmer,Consumer,United States,Pittsburgh,Pennsylvania,East,OFF-PA-003,Office Supplies,Paper,Xerox Multipurpose Paper,38.99,10,0,17.54
+ORD-2023-0036,2023-04-03,2023-04-07,Second Class,CUS-016,Patricia Quinn,Home Office,United States,Kansas City,Missouri,Central,FUR-CH-004,Furniture,Chairs,Secretlab Titan Evo,519,1,0,129.75
+ORD-2023-0037,2023-04-05,2023-04-09,Standard,CUS-017,Quentin Reed,Consumer,United States,Cleveland,Ohio,East,TEC-PH-005,Technology,Phones,Apple iPhone 14,799,3,0.05,179.78
+ORD-2023-0038,2023-04-08,2023-04-12,Standard,CUS-018,Rachel Smith,Corporate,United States,Tampa,Florida,South,OFF-EN-002,Office Supplies,Envelopes,Tyvek Shipping Envelopes,29.99,12,0,13.49
+ORD-2023-0039,2023-04-10,2023-04-13,First Class,CUS-019,Steven Torres,Consumer,United States,St. Louis,Missouri,Central,TEC-AC-005,Technology,Accessories,CalDigit TS4 Thunderbolt Dock,399.99,1,0,119.99
+ORD-2023-0040,2023-04-12,2023-04-16,Standard,CUS-020,Teresa Underwood,Home Office,United States,Tucson,Arizona,West,FUR-BO-002,Furniture,Bookcases,VASAGLE Industrial Bookshelf,139.99,2,0,48.99
+ORD-2023-0041,2023-04-15,2023-04-19,Standard,CUS-001,Adrian Mitchell,Consumer,United States,New Orleans,Louisiana,South,OFF-SU-002,Office Supplies,Supplies,3M Post-it Notes Super Sticky,22.49,8,0,10.79
+ORD-2023-0042,2023-04-18,2023-04-22,Standard,CUS-002,Beth Crawford,Corporate,United States,Omaha,Nebraska,Central,TEC-CO-003,Technology,Copiers,Epson EcoTank ET-2850,279.99,2,0,95.19
+ORD-2023-0043,2023-04-20,2023-04-24,Second Class,CUS-003,Carlos Diaz,Consumer,United States,Albuquerque,New Mexico,West,FUR-FU-003,Furniture,Furnishings,AmazonBasics Mesh Desk Organizer,34.99,4,0,15.39
+ORD-2023-0044,2023-04-22,2023-04-26,Standard,CUS-004,Diana Evans,Home Office,United States,Fresno,California,West,OFF-AR-002,Office Supplies,Art,Sharpie Permanent Markers 36pk,19.99,3,0,9.39
+ORD-2023-0045,2023-04-25,2023-04-29,Standard,CUS-005,Edward Foster,Consumer,United States,Sacramento,California,West,TEC-MA-004,Technology,Machines,Lenovo ThinkPad X1 Carbon,1749,1,0.1,349.8
+ORD-2023-0046,2023-04-28,2023-05-02,Standard,CUS-006,Fiona Grant,Corporate,United States,Virginia Beach,Virginia,South,FUR-TA-004,Furniture,Tables,Uplift V2 Standing Desk,799,1,0,199.75
+ORD-2023-0047,2023-05-02,2023-05-06,Standard,CUS-007,George Harris,Consumer,United States,Long Beach,California,West,OFF-BI-003,Office Supplies,Binders,Cardinal Economy Binder,12.49,15,0.15,1.87
+ORD-2023-0048,2023-05-05,2023-05-08,First Class,CUS-008,Hannah Irving,Home Office,United States,Mesa,Arizona,West,TEC-PH-006,Technology,Phones,Samsung Galaxy A54 5G,449.99,2,0,112.49
+ORD-2023-0049,2023-05-08,2023-05-12,Standard,CUS-009,Ivan Jackson,Consumer,United States,Louisville,Kentucky,South,FUR-CH-005,Furniture,Chairs,HON Ignition 2.0 Task Chair,389,2,0,97.25
+ORD-2023-0050,2023-05-10,2023-05-14,Standard,CUS-010,Julia Kim,Corporate,United States,Tulsa,Oklahoma,Central,OFF-LA-002,Office Supplies,Labels,DYMO LabelWriter Labels,24.99,5,0,11.74
+ORD-2023-0051,2023-05-12,2023-05-15,Second Class,CUS-011,Kevin Lee,Consumer,United States,Oakland,California,West,TEC-AC-006,Technology,Accessories,Keychron Q1 Pro Keyboard,199,1,0,59.7
+ORD-2023-0052,2023-05-15,2023-05-19,Standard,CUS-012,Laura Martinez,Home Office,United States,Boise,Idaho,West,FUR-BO-003,Furniture,Bookcases,Walker Edison Industrial Bookcase,249.99,1,0,62.49
+ORD-2023-0053,2023-05-18,2023-05-22,Standard,CUS-013,Michael Norton,Consumer,United States,Anchorage,Alaska,West,OFF-ST-003,Office Supplies,Storage,Iris 54 Qt Weathertight Box,44.99,6,0,19.79
+ORD-2023-0054,2023-05-20,2023-05-24,Standard,CUS-014,Nancy Owens,Corporate,United States,Lexington,Kentucky,South,TEC-MA-005,Technology,Machines,Apple Mac mini M2,599,3,0,179.7
+ORD-2023-0055,2023-05-22,2023-05-25,First Class,CUS-015,Oscar Palmer,Consumer,United States,St. Paul,Minnesota,Central,OFF-PA-004,Office Supplies,Paper,Georgia-Pacific Copy Paper,32.99,4,0,14.84
+ORD-2023-0056,2023-05-25,2023-05-29,Standard,CUS-016,Patricia Quinn,Home Office,United States,Newark,New Jersey,East,FUR-FU-004,Furniture,Furnishings,Rain Design mStand Laptop Stand,49.99,3,0,19.99
+ORD-2023-0057,2023-05-28,2023-06-01,Standard,CUS-017,Quentin Reed,Consumer,United States,Buffalo,New York,East,TEC-PH-007,Technology,Phones,Google Pixel 7a,499,1,0,109.78
+ORD-2023-0058,2023-06-01,2023-06-05,Standard,CUS-018,Rachel Smith,Corporate,United States,Chandler,Arizona,West,OFF-AP-003,Office Supplies,Appliances,Dyson Pure Cool Air Purifier,449.99,1,0,112.49
+ORD-2023-0059,2023-06-03,2023-06-07,Second Class,CUS-019,Steven Torres,Consumer,United States,Madison,Wisconsin,Central,TEC-AC-007,Technology,Accessories,"LG UltraWide 34"" Monitor",549.99,1,0,148.49
+ORD-2023-0060,2023-06-05,2023-06-08,First Class,CUS-020,Teresa Underwood,Home Office,United States,Scottsdale,Arizona,West,FUR-TA-005,Furniture,Tables,Flexispot E7 Standing Desk,599.99,1,0.1,89.99
+ORD-2023-0061,2023-06-08,2023-06-12,Standard,CUS-001,Adrian Mitchell,Consumer,United States,Reno,Nevada,West,OFF-SU-003,Office Supplies,Supplies,Pilot G2 Premium Gel Pens,11.99,10,0,5.75
+ORD-2023-0062,2023-06-10,2023-06-14,Standard,CUS-002,Beth Crawford,Corporate,United States,Durham,North Carolina,South,TEC-CO-004,Technology,Copiers,HP LaserJet Pro M404dn,349,2,0.05,104.7
+ORD-2023-0063,2023-06-12,2023-06-15,Second Class,CUS-003,Carlos Diaz,Consumer,United States,Norfolk,Virginia,South,FUR-CH-006,Furniture,Chairs,Flash Furniture Mid-Back Mesh Chair,149.99,4,0.2,-15
+ORD-2023-0064,2023-06-15,2023-06-19,Standard,CUS-004,Diana Evans,Home Office,United States,Lubbock,Texas,Central,OFF-EN-003,Office Supplies,Envelopes,Amazon Basics Bubble Mailer,16.99,20,0,7.64
+ORD-2023-0065,2023-06-18,2023-06-22,Standard,CUS-005,Edward Foster,Consumer,United States,Irvine,California,West,TEC-MA-006,Technology,Machines,ASUS ROG Strix G16 Gaming Laptop,1599.99,1,0,399.99
+ORD-2023-0066,2023-06-20,2023-06-24,First Class,CUS-006,Fiona Grant,Corporate,United States,Laredo,Texas,Central,FUR-FU-005,Furniture,Furnishings,Desk Cable Management Tray,29.99,5,0,14.24
+ORD-2023-0067,2023-06-22,2023-06-26,Standard,CUS-007,George Harris,Consumer,United States,Winston-Salem,North Carolina,South,OFF-BI-004,Office Supplies,Binders,Samsill Earth Choice Binder,8.99,12,0.25,-2.69
+ORD-2023-0068,2023-06-25,2023-06-29,Standard,CUS-008,Hannah Irving,Home Office,United States,Garland,Texas,Central,TEC-PH-008,Technology,Phones,Motorola Edge 40 Pro,799.99,1,0,175.99
+ORD-2023-0069,2023-06-28,2023-07-02,Standard,CUS-009,Ivan Jackson,Consumer,United States,Hialeah,Florida,South,FUR-BO-004,Furniture,Bookcases,Prepac Tall Slant-Back Bookcase,189.99,1,0,47.49
+ORD-2023-0070,2023-07-01,2023-07-05,Standard,CUS-010,Julia Kim,Corporate,United States,Chesapeake,Virginia,South,OFF-LA-003,Office Supplies,Labels,Brother P-Touch Label Tape,19.99,4,0,9.39
+ORD-2023-0071,2023-07-03,2023-07-07,Second Class,CUS-011,Kevin Lee,Consumer,United States,Spokane,Washington,West,TEC-MA-007,Technology,Machines,Microsoft Surface Pro 9,1599.99,1,0.05,383.99
+ORD-2023-0072,2023-07-05,2023-07-09,Standard,CUS-012,Laura Martinez,Home Office,United States,Little Rock,Arkansas,South,FUR-CH-007,Furniture,Chairs,Branch Ergonomic Chair,449,1,0,112.25
+ORD-2023-0073,2023-07-08,2023-07-12,Standard,CUS-013,Michael Norton,Consumer,United States,Baton Rouge,Louisiana,South,OFF-PA-005,Office Supplies,Paper,Southworth Linen Business Paper,24.99,3,0,11.24
+ORD-2023-0074,2023-07-10,2023-07-14,First Class,CUS-014,Nancy Owens,Corporate,United States,Tacoma,Washington,West,TEC-AC-008,Technology,Accessories,Elgato Stream Deck MK.2,149.99,2,0,44.99
+ORD-2023-0075,2023-07-12,2023-07-16,Standard,CUS-015,Oscar Palmer,Consumer,United States,Mobile,Alabama,South,FUR-TA-006,Furniture,Tables,Walker Edison Farmhouse Table,349.99,1,0,87.49
+ORD-2023-0076,2023-07-15,2023-07-19,Standard,CUS-016,Patricia Quinn,Home Office,United States,Grand Rapids,Michigan,Central,OFF-AP-004,Office Supplies,Appliances,Breville Smart Oven Air Fryer,399.99,1,0,99.99
+ORD-2023-0077,2023-07-18,2023-07-22,Standard,CUS-017,Quentin Reed,Consumer,United States,Huntsville,Alabama,South,TEC-PH-009,Technology,Phones,Nothing Phone (2),599,1,0,131.78
+ORD-2023-0078,2023-07-20,2023-07-24,Second Class,CUS-018,Rachel Smith,Corporate,United States,Tallahassee,Florida,South,OFF-ST-004,Office Supplies,Storage,mDesign Storage Organizer Set,39.99,3,0,17.59
+ORD-2023-0079,2023-07-22,2023-07-25,First Class,CUS-019,Steven Torres,Consumer,United States,Knoxville,Tennessee,South,FUR-FU-006,Furniture,Furnishings,Under Desk Keyboard Tray,44.99,2,0,17.99
+ORD-2023-0080,2023-07-25,2023-07-29,Standard,CUS-020,Teresa Underwood,Home Office,United States,Worcester,Massachusetts,East,TEC-CO-005,Technology,Copiers,Xerox VersaLink C405,649.99,1,0,194.99
+ORD-2023-0081,2023-07-28,2023-08-01,Standard,CUS-001,Adrian Mitchell,Consumer,United States,Providence,Rhode Island,East,OFF-AR-003,Office Supplies,Art,Crayola Inspiration Art Set,49.99,2,0,22.49
+ORD-2023-0082,2023-08-01,2023-08-05,Standard,CUS-002,Beth Crawford,Corporate,United States,Newport News,Virginia,South,TEC-MA-008,Technology,Machines,"Apple iMac 24"" M2",1499,2,0,449.7
+ORD-2023-0083,2023-08-03,2023-08-07,Second Class,CUS-003,Carlos Diaz,Consumer,United States,Brownsville,Texas,Central,FUR-CH-008,Furniture,Chairs,SIDIZ T80 Ergonomic Chair,699,1,0,174.75
+ORD-2023-0084,2023-08-05,2023-08-08,First Class,CUS-004,Diana Evans,Home Office,United States,Amarillo,Texas,Central,OFF-BI-005,Office Supplies,Binders,Staples Better Binder,14.99,8,0.1,3.59
+ORD-2023-0085,2023-08-08,2023-08-12,Standard,CUS-005,Edward Foster,Consumer,United States,Sioux Falls,South Dakota,Central,TEC-PH-010,Technology,Phones,Sony Xperia 1 V,1299.99,1,0,285.99
+ORD-2023-0086,2023-08-10,2023-08-14,Standard,CUS-006,Fiona Grant,Corporate,United States,Glendale,California,West,FUR-TA-007,Furniture,Tables,Autonomous SmartDesk Core,459,2,0,114.75
+ORD-2023-0087,2023-08-12,2023-08-15,Second Class,CUS-007,George Harris,Consumer,United States,Akron,Ohio,East,OFF-SU-004,Office Supplies,Supplies,Bostitch No-Jam Stapler,32.99,2,0,14.84
+ORD-2023-0088,2023-08-15,2023-08-19,Standard,CUS-008,Hannah Irving,Home Office,United States,Aurora,Colorado,West,TEC-AC-009,Technology,Accessories,Razer Basilisk V3 Pro Mouse,159.99,1,0,47.99
+ORD-2023-0089,2023-08-18,2023-08-22,Standard,CUS-009,Ivan Jackson,Consumer,United States,Irving,Texas,Central,FUR-BO-005,Furniture,Bookcases,South Shore Axess 5-Shelf,179.99,1,0.05,40.49
+ORD-2023-0090,2023-08-20,2023-08-24,First Class,CUS-010,Julia Kim,Corporate,United States,Fremont,California,West,OFF-EN-004,Office Supplies,Envelopes,JAM Paper Business Envelopes,22.49,10,0,10.12
+ORD-2023-0091,2023-08-22,2023-08-26,Standard,CUS-011,Kevin Lee,Consumer,United States,Plano,Texas,Central,TEC-MA-009,Technology,Machines,Acer Swift 5 Laptop,1099.99,1,0.1,219.99
+ORD-2023-0092,2023-08-25,2023-08-29,Standard,CUS-012,Laura Martinez,Home Office,United States,Lincoln,Nebraska,Central,FUR-FU-007,Furniture,Furnishings,SimpleHouseware Mesh Desk Organizer,25.99,3,0,11.69
+ORD-2023-0093,2023-08-28,2023-09-01,Standard,CUS-013,Michael Norton,Consumer,United States,Orlando,Florida,South,OFF-PA-006,Office Supplies,Paper,Astrobrights Colored Paper,18.99,6,0,8.54
+ORD-2023-0094,2023-09-02,2023-09-06,Standard,CUS-014,Nancy Owens,Corporate,United States,Chula Vista,California,West,TEC-PH-011,Technology,Phones,Apple iPhone 15,899,4,0,224.75
+ORD-2023-0095,2023-09-05,2023-09-08,First Class,CUS-015,Oscar Palmer,Consumer,United States,Chandler,Arizona,West,FUR-CH-009,Furniture,Chairs,Haworth Fern Chair,879,1,0,219.75
+ORD-2023-0096,2023-09-08,2023-09-12,Standard,CUS-016,Patricia Quinn,Home Office,United States,St. Petersburg,Florida,South,OFF-AP-005,Office Supplies,Appliances,Nespresso Vertuo Next,179.99,2,0,53.99
+ORD-2023-0097,2023-09-10,2023-09-14,Standard,CUS-017,Quentin Reed,Consumer,United States,Laredo,Texas,Central,TEC-CO-006,Technology,Copiers,Lexmark MC3224adwe,299.99,1,0,89.99
+ORD-2023-0098,2023-09-12,2023-09-15,Second Class,CUS-018,Rachel Smith,Corporate,United States,Corpus Christi,Texas,Central,FUR-TA-008,Furniture,Tables,Zinus Jennifer Coffee Table,139.99,2,0,48.99
+ORD-2023-0099,2023-09-15,2023-09-19,Standard,CUS-019,Steven Torres,Consumer,United States,Henderson,Nevada,West,OFF-AR-004,Office Supplies,Art,Pentel Arts Oil Pastels,12.99,5,0,6.1
+ORD-2023-0100,2023-09-18,2023-09-22,Standard,CUS-020,Teresa Underwood,Home Office,United States,Riverside,California,West,TEC-AC-010,Technology,Accessories,Sony WH-1000XM5 Headphones,348,2,0,97.44
+ORD-2023-0101,2023-09-20,2023-09-24,First Class,CUS-001,Adrian Mitchell,Consumer,United States,Stockton,California,West,FUR-FU-008,Furniture,Furnishings,Humanscale M8.1 Monitor Arm,299,1,0,89.7
+ORD-2023-0102,2023-09-22,2023-09-26,Standard,CUS-002,Beth Crawford,Corporate,United States,Birmingham,Alabama,South,OFF-ST-005,Office Supplies,Storage,IRIS USA Stackable Drawer,54.99,4,0,24.19
+ORD-2023-0103,2023-09-25,2023-09-29,Standard,CUS-003,Carlos Diaz,Consumer,United States,Jersey City,New Jersey,East,TEC-MA-010,Technology,Machines,Lenovo IdeaPad 5 Pro,999.99,1,0,249.99
+ORD-2023-0104,2023-09-28,2023-10-02,Standard,CUS-004,Diana Evans,Home Office,United States,Fargo,North Dakota,Central,FUR-CH-010,Furniture,Chairs,Nouhaus Ergo3D Ergonomic Chair,349.99,1,0,87.49
+ORD-2023-0105,2023-10-02,2023-10-06,Standard,CUS-005,Edward Foster,Consumer,United States,Anchorage,Alaska,West,OFF-BI-006,Office Supplies,Binders,Case-it 2-in-1 Zipper Binder,29.99,3,0,13.49
+ORD-2023-0106,2023-10-05,2023-10-09,Second Class,CUS-006,Fiona Grant,Corporate,United States,Honolulu,Hawaii,West,TEC-PH-012,Technology,Phones,Samsung Galaxy Z Fold 5,1799.99,1,0,395.99
+ORD-2023-0107,2023-10-08,2023-10-12,Standard,CUS-007,George Harris,Consumer,United States,Des Moines,Iowa,Central,FUR-BO-006,Furniture,Bookcases,Atlantic Oskar Media Cabinet,169.99,1,0,42.49
+ORD-2023-0108,2023-10-10,2023-10-13,First Class,CUS-008,Hannah Irving,Home Office,United States,Boise,Idaho,West,OFF-LA-004,Office Supplies,Labels,Avery Shipping Labels,29.99,6,0,14.09
+ORD-2023-0109,2023-10-12,2023-10-16,Standard,CUS-009,Ivan Jackson,Consumer,United States,Jackson,Mississippi,South,TEC-AC-011,Technology,Accessories,Corsair K70 RGB Keyboard,169.99,2,0,50.99
+ORD-2023-0110,2023-10-15,2023-10-19,Standard,CUS-010,Julia Kim,Corporate,United States,Salt Lake City,Utah,West,FUR-TA-009,Furniture,Tables,IKEA ALEX Desk,299.99,2,0.1,44.99
+ORD-2023-0111,2023-10-18,2023-10-22,Standard,CUS-011,Kevin Lee,Consumer,United States,Wichita,Kansas,Central,OFF-PA-007,Office Supplies,Paper,Boise X-9 Copy Paper,39.99,5,0,17.99
+ORD-2023-0112,2023-10-20,2023-10-24,Second Class,CUS-012,Laura Martinez,Home Office,United States,Arlington,Texas,Central,TEC-MA-011,Technology,Machines,HP Pavilion Desktop,749.99,1,0,187.49
+ORD-2023-0113,2023-10-22,2023-10-26,Standard,CUS-013,Michael Norton,Consumer,United States,New Orleans,Louisiana,South,FUR-FU-009,Furniture,Furnishings,VIVO Dual Monitor Desk Mount,39.99,3,0,17.59
+ORD-2023-0114,2023-10-25,2023-10-29,Standard,CUS-014,Nancy Owens,Corporate,United States,Cleveland,Ohio,East,OFF-AP-006,Office Supplies,Appliances,Instant Pot Duo 7-in-1,89.99,2,0,31.49
+ORD-2023-0115,2023-10-28,2023-11-01,Standard,CUS-015,Oscar Palmer,Consumer,United States,Tampa,Florida,South,TEC-PH-013,Technology,Phones,Apple iPhone 15 Plus,999,2,0,249.75
+ORD-2023-0116,2023-11-01,2023-11-05,Standard,CUS-016,Patricia Quinn,Home Office,United States,Minneapolis,Minnesota,Central,FUR-CH-011,Furniture,Chairs,Knoll ReGeneration Chair,749,1,0,187.25
+ORD-2023-0117,2023-11-03,2023-11-07,First Class,CUS-017,Quentin Reed,Consumer,United States,Bakersfield,California,West,OFF-SU-005,Office Supplies,Supplies,Scotch Heavy Duty Packing Tape,9.99,12,0,4.49
+ORD-2023-0118,2023-11-05,2023-11-09,Standard,CUS-018,Rachel Smith,Corporate,United States,Colorado Springs,Colorado,West,TEC-MA-012,Technology,Machines,Dell Inspiron 16 Plus,1199.99,2,0,359.99
+ORD-2023-0119,2023-11-08,2023-11-12,Standard,CUS-019,Steven Torres,Consumer,United States,Raleigh,North Carolina,South,FUR-TA-010,Furniture,Tables,"SHW 55"" L-Shaped Desk",189.99,2,0,47.49
+ORD-2023-0120,2023-11-10,2023-11-14,Standard,CUS-020,Teresa Underwood,Home Office,United States,Virginia Beach,Virginia,South,OFF-EN-005,Office Supplies,Envelopes,Columbian Security Envelopes,14.99,15,0,6.74
+ORD-2023-0121,2023-11-12,2023-11-16,Second Class,CUS-001,Adrian Mitchell,Consumer,United States,Omaha,Nebraska,Central,TEC-AC-012,Technology,Accessories,Bose SoundLink Flex Speaker,149,3,0,44.7
+ORD-2023-0122,2023-11-15,2023-11-19,Standard,CUS-002,Beth Crawford,Corporate,United States,Atlanta,Georgia,South,FUR-BO-007,Furniture,Bookcases,Ikea KALLAX Shelf Unit,99.99,3,0,29.99
+ORD-2023-0123,2023-11-18,2023-11-22,Standard,CUS-003,Carlos Diaz,Consumer,United States,Oakland,California,West,OFF-ST-006,Office Supplies,Storage,Rubbermaid Roughneck Storage,34.99,4,0,15.39
+ORD-2023-0124,2023-11-20,2023-11-24,First Class,CUS-004,Diana Evans,Home Office,United States,Tulsa,Oklahoma,Central,TEC-PH-014,Technology,Phones,Samsung Galaxy S23 FE,599.99,2,0.05,113.99
+ORD-2023-0125,2023-11-22,2023-11-26,Standard,CUS-005,Edward Foster,Consumer,United States,Mesa,Arizona,West,FUR-FU-010,Furniture,Furnishings,TaoTronics LED Desk Lamp,49.99,2,0,19.99
+ORD-2023-0126,2023-11-25,2023-11-29,Standard,CUS-006,Fiona Grant,Corporate,United States,Lexington,Kentucky,South,OFF-BI-007,Office Supplies,Binders,Five Star Flex Binder,17.49,5,0,7.86
+ORD-2023-0127,2023-11-28,2023-12-02,Standard,CUS-007,George Harris,Consumer,United States,Stockton,California,West,TEC-CO-007,Technology,Copiers,Canon PIXMA TR8620a,229.99,2,0,68.99
+ORD-2023-0128,2023-12-01,2023-12-05,Standard,CUS-008,Hannah Irving,Home Office,United States,Newark,New Jersey,East,TEC-MA-013,Technology,Machines,"MacBook Pro 14"" M3",1999,3,0,599.7
+ORD-2023-0129,2023-12-03,2023-12-07,Second Class,CUS-009,Ivan Jackson,Consumer,United States,Greensboro,North Carolina,South,FUR-CH-012,Furniture,Chairs,La-Z-Boy Hyland Executive Chair,499.99,2,0,124.99
+ORD-2023-0130,2023-12-05,2023-12-08,First Class,CUS-010,Julia Kim,Corporate,United States,Pittsburgh,Pennsylvania,East,OFF-PA-008,Office Supplies,Paper,Epson Premium Photo Paper,24.99,4,0,11.24
+ORD-2023-0131,2023-12-08,2023-12-12,Standard,CUS-011,Kevin Lee,Consumer,United States,Lincoln,Nebraska,Central,TEC-PH-015,Technology,Phones,Google Pixel 8 Pro,999,2,0,219.78
+ORD-2023-0132,2023-12-10,2023-12-14,Standard,CUS-012,Laura Martinez,Home Office,United States,Henderson,Nevada,West,FUR-TA-011,Furniture,Tables,Sauder Boulevard Cafe Desk,259.99,1,0,64.99
+ORD-2023-0133,2023-12-12,2023-12-16,Standard,CUS-013,Michael Norton,Consumer,United States,Buffalo,New York,East,OFF-AP-007,Office Supplies,Appliances,Hamilton Beach FlexBrew Coffee Maker,79.99,3,0,27.99
+ORD-2023-0134,2023-12-15,2023-12-19,Second Class,CUS-014,Nancy Owens,Corporate,United States,Fort Worth,Texas,Central,TEC-AC-013,Technology,Accessories,Apple Watch Ultra 2,799,2,0,239.7
+ORD-2023-0135,2023-12-18,2023-12-22,Standard,CUS-015,Oscar Palmer,Consumer,United States,Chandler,Arizona,West,FUR-FU-011,Furniture,Furnishings,Philips Hue Desk Lamp,89.99,2,0,35.99
+ORD-2023-0136,2023-12-20,2023-12-24,First Class,CUS-016,Patricia Quinn,Home Office,United States,Scottsdale,Arizona,West,OFF-SU-006,Office Supplies,Supplies,Paper Mate InkJoy Gel Pens,14.99,6,0,7.04
+ORD-2023-0137,2023-12-22,2023-12-26,Standard,CUS-017,Quentin Reed,Consumer,United States,Glendale,California,West,TEC-MA-014,Technology,Machines,ASUS ZenBook 14 OLED,1049.99,1,0,262.49
+ORD-2023-0138,2023-12-25,2023-12-29,Standard,CUS-018,Rachel Smith,Corporate,United States,St. Louis,Missouri,Central,FUR-CH-013,Furniture,Chairs,Serta Big & Tall Executive Chair,449.99,1,0.1,67.49
+ORD-2023-0139,2023-12-28,2024-01-01,Standard,CUS-019,Steven Torres,Consumer,United States,Laredo,Texas,Central,OFF-AR-005,Office Supplies,Art,Faber-Castell Watercolor Pencils,29.99,2,0,14.09
+ORD-2023-0140,2023-12-30,2024-01-03,Standard,CUS-020,Teresa Underwood,Home Office,United States,Corpus Christi,Texas,Central,TEC-CO-008,Technology,Copiers,HP OfficeJet Pro 9015e,299.99,2,0,89.99
+ORD-2024-0001,2024-01-03,2024-01-07,Standard,CUS-001,Adrian Mitchell,Consumer,United States,New York,New York,East,TEC-MA-015,Technology,Machines,MacBook Air M3,1299,3,0,389.7
+ORD-2024-0002,2024-01-05,2024-01-09,Second Class,CUS-002,Beth Crawford,Corporate,United States,Los Angeles,California,West,FUR-CH-014,Furniture,Chairs,Herman Miller Embody Chair,1795,1,0,448.75
+ORD-2024-0003,2024-01-08,2024-01-11,First Class,CUS-003,Carlos Diaz,Consumer,United States,Chicago,Illinois,Central,OFF-PA-009,Office Supplies,Paper,HP Premium 32lb Paper,54.99,4,0,24.74
+ORD-2024-0004,2024-01-10,2024-01-14,Standard,CUS-004,Diana Evans,Home Office,United States,Houston,Texas,Central,TEC-PH-016,Technology,Phones,Samsung Galaxy S24 Ultra,1299.99,2,0,325
+ORD-2024-0005,2024-01-12,2024-01-16,Standard,CUS-005,Edward Foster,Consumer,United States,Phoenix,Arizona,West,OFF-BI-008,Office Supplies,Binders,Avery Heavy Duty View Binder,19.99,6,0.15,2.39
+ORD-2024-0006,2024-01-15,2024-01-19,Standard,CUS-006,Fiona Grant,Corporate,United States,Philadelphia,Pennsylvania,East,TEC-CO-009,Technology,Copiers,Brother HL-L2395DW,199.99,3,0,59.99
+ORD-2024-0007,2024-01-18,2024-01-22,Standard,CUS-007,George Harris,Consumer,United States,San Antonio,Texas,Central,FUR-TA-012,Furniture,Tables,Vari Electric Standing Desk,695,1,0,173.75
+ORD-2024-0008,2024-01-20,2024-01-24,First Class,CUS-008,Hannah Irving,Home Office,United States,San Diego,California,West,OFF-ST-007,Office Supplies,Storage,Honey-Can-Do Rolling Cart,49.99,2,0,21.99
+ORD-2024-0009,2024-01-22,2024-01-26,Standard,CUS-009,Ivan Jackson,Consumer,United States,Dallas,Texas,Central,TEC-AC-014,Technology,Accessories,Apple AirPods Max,549,1,0,164.7
+ORD-2024-0010,2024-01-25,2024-01-29,Standard,CUS-010,Julia Kim,Corporate,United States,Jacksonville,Florida,South,FUR-FU-012,Furniture,Furnishings,Brabantia Wallfix Dryer,109.99,1,0,38.49
+ORD-2024-0011,2024-01-28,2024-02-01,Second Class,CUS-011,Kevin Lee,Consumer,United States,Columbus,Ohio,East,OFF-LA-005,Office Supplies,Labels,Avery Removable Labels,12.99,8,0,6.1
+ORD-2024-0012,2024-01-30,2024-02-03,Standard,CUS-012,Laura Martinez,Home Office,United States,Charlotte,North Carolina,South,TEC-MA-016,Technology,Machines,Microsoft Surface Laptop 5,1299.99,1,0,324.99
+ORD-2024-0013,2024-02-02,2024-02-06,Standard,CUS-013,Michael Norton,Consumer,United States,San Francisco,California,West,FUR-CH-015,Furniture,Chairs,Steelcase Gesture Chair,1289,1,0,322.25
+ORD-2024-0014,2024-02-05,2024-02-08,First Class,CUS-014,Nancy Owens,Corporate,United States,Indianapolis,Indiana,Central,OFF-AP-008,Office Supplies,Appliances,Vitamix E310 Blender,349.99,1,0,104.99
+ORD-2024-0015,2024-02-08,2024-02-12,Standard,CUS-015,Oscar Palmer,Consumer,United States,Seattle,Washington,West,TEC-PH-017,Technology,Phones,Apple iPhone 15 Pro Max,1199,2,0,299.75
+ORD-2024-0016,2024-02-10,2024-02-14,Standard,CUS-016,Patricia Quinn,Home Office,United States,Denver,Colorado,West,FUR-BO-008,Furniture,Bookcases,Baxton Studio Bookcase,199.99,2,0,49.99
+ORD-2024-0017,2024-02-12,2024-02-16,Second Class,CUS-017,Quentin Reed,Consumer,United States,Nashville,Tennessee,South,OFF-SU-007,Office Supplies,Supplies,X-ACTO School Pro Sharpener,29.99,2,0,14.09
+ORD-2024-0018,2024-02-15,2024-02-19,Standard,CUS-018,Rachel Smith,Corporate,United States,Boston,Massachusetts,East,TEC-AC-015,Technology,Accessories,"Dell UltraSharp 27"" 4K Monitor",619.99,1,0,185.99
+ORD-2024-0019,2024-02-18,2024-02-22,Standard,CUS-019,Steven Torres,Consumer,United States,Atlanta,Georgia,South,FUR-TA-013,Furniture,Tables,CubiCubi Computer Desk,129.99,3,0,38.99
+ORD-2024-0020,2024-02-20,2024-02-24,First Class,CUS-020,Teresa Underwood,Home Office,United States,Portland,Oregon,West,OFF-EN-006,Office Supplies,Envelopes,Bazic Manila Envelopes,8.99,20,0,4.04
+ORD-2024-0021,2024-02-22,2024-02-26,Standard,CUS-001,Adrian Mitchell,Consumer,United States,New York,New York,East,TEC-MA-017,Technology,Machines,Razer Blade 16 Gaming Laptop,2799.99,1,0,699.99
+ORD-2024-0022,2024-02-25,2024-03-01,Standard,CUS-002,Beth Crawford,Corporate,United States,Miami,Florida,South,FUR-FU-013,Furniture,Furnishings,SONGMICS Coat Rack,49.99,2,0,19.99
+ORD-2024-0023,2024-02-28,2024-03-03,Standard,CUS-003,Carlos Diaz,Consumer,United States,Minneapolis,Minnesota,Central,OFF-BI-009,Office Supplies,Binders,Durable Premium Binder,22.99,4,0,10.34
+ORD-2024-0024,2024-03-02,2024-03-06,Standard,CUS-004,Diana Evans,Home Office,United States,Austin,Texas,Central,TEC-PH-018,Technology,Phones,OnePlus 12,799.99,2,0,175.99
+ORD-2024-0025,2024-03-05,2024-03-08,First Class,CUS-005,Edward Foster,Consumer,United States,Detroit,Michigan,Central,FUR-CH-016,Furniture,Chairs,Eurotech iOO Chair,599,1,0,149.75
+ORD-2024-0026,2024-03-08,2024-03-12,Standard,CUS-006,Fiona Grant,Corporate,United States,Memphis,Tennessee,South,OFF-PA-010,Office Supplies,Paper,Neenah Exact Index Cardstock,34.99,5,0,15.74
+ORD-2024-0027,2024-03-10,2024-03-14,Standard,CUS-007,George Harris,Consumer,United States,Baltimore,Maryland,East,TEC-MA-018,Technology,Machines,HP Spectre x360 16,1649.99,1,0,412.49
+ORD-2024-0028,2024-03-12,2024-03-16,Second Class,CUS-008,Hannah Irving,Home Office,United States,Milwaukee,Wisconsin,Central,FUR-TA-014,Furniture,Tables,VASAGLE Computer Desk,159.99,2,0,47.99
+ORD-2024-0029,2024-03-15,2024-03-19,Standard,CUS-009,Ivan Jackson,Consumer,United States,Las Vegas,Nevada,West,OFF-AP-009,Office Supplies,Appliances,De'Longhi Espresso Machine,699.95,1,0,209.98
+ORD-2024-0030,2024-03-18,2024-03-22,Standard,CUS-010,Julia Kim,Corporate,United States,Oklahoma City,Oklahoma,Central,TEC-AC-016,Technology,Accessories,Jabra Elite 85t Earbuds,179.99,3,0,53.99
+ORD-2024-0031,2024-03-20,2024-03-24,First Class,CUS-011,Kevin Lee,Consumer,United States,Raleigh,North Carolina,South,FUR-FU-014,Furniture,Furnishings,MOUNTUP Dual Monitor Stand,35.99,4,0,15.83
+ORD-2024-0032,2024-03-22,2024-03-26,Standard,CUS-012,Laura Martinez,Home Office,United States,Richmond,Virginia,South,OFF-ST-008,Office Supplies,Storage,Amazon Basics Hanging Folders,14.99,10,0,6.74
+ORD-2024-0033,2024-03-25,2024-03-29,Standard,CUS-013,Michael Norton,Consumer,United States,Hartford,Connecticut,East,TEC-PH-019,Technology,Phones,Google Pixel 8,699,2,0,153.78
+ORD-2024-0034,2024-03-28,2024-04-01,Standard,CUS-014,Nancy Owens,Corporate,United States,Salt Lake City,Utah,West,FUR-BO-009,Furniture,Bookcases,Threshold Carson Bookcase,149.99,2,0,44.99
+ORD-2024-0035,2024-04-01,2024-04-05,Standard,CUS-015,Oscar Palmer,Consumer,United States,Pittsburgh,Pennsylvania,East,OFF-SU-008,Office Supplies,Supplies,Uni-ball Signo Gel Pens,18.99,5,0,8.92
+ORD-2024-0036,2024-04-03,2024-04-07,Second Class,CUS-016,Patricia Quinn,Home Office,United States,Kansas City,Missouri,Central,TEC-MA-019,Technology,Machines,Apple Mac Studio M2 Max,1999,1,0,599.7
+ORD-2024-0037,2024-04-05,2024-04-09,Standard,CUS-017,Quentin Reed,Consumer,United States,Cleveland,Ohio,East,FUR-CH-017,Furniture,Chairs,Humanscale Freedom Chair,1099,1,0,274.75
+ORD-2024-0038,2024-04-08,2024-04-12,Standard,CUS-018,Rachel Smith,Corporate,United States,Tampa,Florida,South,OFF-AR-006,Office Supplies,Art,Copic Sketch Markers Set,59.99,2,0,28.19
+ORD-2024-0039,2024-04-10,2024-04-14,First Class,CUS-019,Steven Torres,Consumer,United States,St. Louis,Missouri,Central,TEC-CO-010,Technology,Copiers,Canon imageRUNNER C3226i,1899,1,0,569.7
+ORD-2024-0040,2024-04-12,2024-04-16,Standard,CUS-020,Teresa Underwood,Home Office,United States,Tucson,Arizona,West,FUR-TA-015,Furniture,Tables,Monarch Specialties L-Desk,279.99,1,0,69.99
+ORD-2024-0041,2024-04-15,2024-04-19,Standard,CUS-001,Adrian Mitchell,Consumer,United States,New Orleans,Louisiana,South,OFF-PA-011,Office Supplies,Paper,Hammermill Color Copy Paper,64.99,3,0,29.24
+ORD-2024-0042,2024-04-18,2024-04-22,Standard,CUS-002,Beth Crawford,Corporate,United States,Omaha,Nebraska,Central,TEC-PH-020,Technology,Phones,Samsung Galaxy Z Flip 5,999.99,1,0,219.99
+ORD-2024-0043,2024-04-20,2024-04-24,Second Class,CUS-003,Carlos Diaz,Consumer,United States,Albuquerque,New Mexico,West,FUR-FU-015,Furniture,Furnishings,HAY About A Mirror,189,1,0,56.7
+ORD-2024-0044,2024-04-22,2024-04-26,Standard,CUS-004,Diana Evans,Home Office,United States,Fresno,California,West,OFF-BI-010,Office Supplies,Binders,Staples Arc System Binder,34.99,3,0,15.74
+ORD-2024-0045,2024-04-25,2024-04-29,Standard,CUS-005,Edward Foster,Consumer,United States,Sacramento,California,West,TEC-AC-017,Technology,Accessories,Apple Magic Keyboard,299,2,0,89.7
+ORD-2024-0046,2024-04-28,2024-05-02,Standard,CUS-006,Fiona Grant,Corporate,United States,Virginia Beach,Virginia,South,FUR-CH-018,Furniture,Chairs,WorkPro Quantum 9000 Chair,399.99,2,0.1,59.99
+ORD-2024-0047,2024-05-01,2024-05-05,Standard,CUS-007,George Harris,Consumer,United States,Long Beach,California,West,OFF-LA-006,Office Supplies,Labels,DYMO LabelManager 160,39.99,2,0,18.79
+ORD-2024-0048,2024-05-03,2024-05-07,First Class,CUS-008,Hannah Irving,Home Office,United States,Mesa,Arizona,West,TEC-MA-020,Technology,Machines,ASUS ROG Flow Z13 Tablet,1799.99,1,0,449.99
+ORD-2024-0049,2024-05-05,2024-05-09,Standard,CUS-009,Ivan Jackson,Consumer,United States,Louisville,Kentucky,South,FUR-TA-016,Furniture,Tables,Novogratz Brittany Coffee Table,159.99,1,0,39.99
+ORD-2024-0050,2024-05-08,2024-05-12,Standard,CUS-010,Julia Kim,Corporate,United States,Tulsa,Oklahoma,Central,OFF-EN-007,Office Supplies,Envelopes,Quality Park Catalog Envelopes,24.99,8,0,11.24
+ORD-2024-0051,2024-05-10,2024-05-14,Second Class,CUS-011,Kevin Lee,Consumer,United States,Oakland,California,West,TEC-PH-021,Technology,Phones,Nothing Phone (2a),349,2,0,76.78
+ORD-2024-0052,2024-05-12,2024-05-16,Standard,CUS-012,Laura Martinez,Home Office,United States,Boise,Idaho,West,FUR-BO-010,Furniture,Bookcases,HOMCOM 6-Tier Bookcase,129.99,1,0,38.99
+ORD-2024-0053,2024-05-15,2024-05-19,Standard,CUS-013,Michael Norton,Consumer,United States,Anchorage,Alaska,West,OFF-ST-009,Office Supplies,Storage,Sterilite ClearView Latch Box,19.99,6,0,8.79
+ORD-2024-0054,2024-05-18,2024-05-22,Standard,CUS-014,Nancy Owens,Corporate,United States,Lexington,Kentucky,South,TEC-CO-011,Technology,Copiers,Ricoh SP C261SFNw,449.99,1,0,134.99
+ORD-2024-0055,2024-05-20,2024-05-24,First Class,CUS-015,Oscar Palmer,Consumer,United States,St. Paul,Minnesota,Central,FUR-FU-016,Furniture,Furnishings,Govee Smart LED Strip Lights,39.99,3,0,17.59
+ORD-2024-0056,2024-05-22,2024-05-26,Standard,CUS-016,Patricia Quinn,Home Office,United States,Newark,New Jersey,East,OFF-AP-010,Office Supplies,Appliances,Ninja Professional Blender,99.99,2,0,34.99
+ORD-2024-0057,2024-05-25,2024-05-29,Standard,CUS-017,Quentin Reed,Consumer,United States,Buffalo,New York,East,TEC-AC-018,Technology,Accessories,SteelSeries Arctis Nova Pro,349.99,1,0,104.99
+ORD-2024-0058,2024-05-28,2024-06-01,Standard,CUS-018,Rachel Smith,Corporate,United States,Chandler,Arizona,West,FUR-CH-019,Furniture,Chairs,Staples Hyken Technical Chair,249.99,2,0,62.49
+ORD-2024-0059,2024-06-01,2024-06-05,Standard,CUS-019,Steven Torres,Consumer,United States,Madison,Wisconsin,Central,OFF-AR-007,Office Supplies,Art,Winsor & Newton Watercolor Set,79.99,1,0,37.59
+ORD-2024-0060,2024-06-03,2024-06-07,Second Class,CUS-020,Teresa Underwood,Home Office,United States,Scottsdale,Arizona,West,TEC-MA-021,Technology,Machines,Dell XPS 13 Plus,1399.99,1,0,349.99
+ORD-2024-0061,2024-06-05,2024-06-09,Standard,CUS-001,Adrian Mitchell,Consumer,United States,Reno,Nevada,West,FUR-TA-017,Furniture,Tables,Tribesigns Executive Desk,399.99,1,0,99.99
+ORD-2024-0062,2024-06-08,2024-06-12,Standard,CUS-002,Beth Crawford,Corporate,United States,Durham,North Carolina,South,OFF-PA-012,Office Supplies,Paper,Strathmore Writing Paper,16.99,3,0,7.64
+ORD-2024-0063,2024-06-10,2024-06-14,First Class,CUS-003,Carlos Diaz,Consumer,United States,Norfolk,Virginia,South,TEC-PH-022,Technology,Phones,Motorola Razr Plus 2024,999.99,1,0,219.99
+ORD-2024-0064,2024-06-12,2024-06-16,Standard,CUS-004,Diana Evans,Home Office,United States,Lubbock,Texas,Central,FUR-FU-017,Furniture,Furnishings,mDesign Wall Mount Magazine Rack,24.99,3,0,10.49
+ORD-2024-0065,2024-06-15,2024-06-19,Standard,CUS-005,Edward Foster,Consumer,United States,Irvine,California,West,OFF-BI-011,Office Supplies,Binders,Universal Economy Binder,7.99,20,0.3,-9.58
+ORD-2024-0066,2024-06-18,2024-06-22,Standard,CUS-006,Fiona Grant,Corporate,United States,Laredo,Texas,Central,TEC-AC-019,Technology,Accessories,Samsung Galaxy Tab S9 FE,449.99,2,0,134.99
+ORD-2024-0067,2024-06-20,2024-06-24,Second Class,CUS-007,George Harris,Consumer,United States,Winston-Salem,North Carolina,South,FUR-CH-020,Furniture,Chairs,Modway Articulate Mesh Chair,179.99,3,0.15,-8.09
+ORD-2024-0068,2024-06-22,2024-06-26,Standard,CUS-008,Hannah Irving,Home Office,United States,Garland,Texas,Central,OFF-SU-009,Office Supplies,Supplies,Elmer's All Purpose Glue,6.99,8,0,3.14
+ORD-2024-0069,2024-06-25,2024-06-29,Standard,CUS-009,Ivan Jackson,Consumer,United States,Hialeah,Florida,South,TEC-MA-022,Technology,Machines,Acer Predator Helios 16,1899.99,1,0,474.99
+ORD-2024-0070,2024-06-28,2024-07-02,Standard,CUS-010,Julia Kim,Corporate,United States,Chesapeake,Virginia,South,FUR-BO-011,Furniture,Bookcases,Nathan James Theo Bookcase,119.99,2,0,35.99
+ORD-2024-0071,2024-07-01,2024-07-05,Standard,CUS-011,Kevin Lee,Consumer,United States,Spokane,Washington,West,OFF-EN-008,Office Supplies,Envelopes,Poly Mailers 10x13,19.99,15,0,8.99
+ORD-2024-0072,2024-07-03,2024-07-07,First Class,CUS-012,Laura Martinez,Home Office,United States,Little Rock,Arkansas,South,TEC-PH-023,Technology,Phones,Apple iPhone SE 4th Gen,499,3,0,124.75
+ORD-2024-0073,2024-07-05,2024-07-09,Standard,CUS-013,Michael Norton,Consumer,United States,Baton Rouge,Louisiana,South,FUR-TA-018,Furniture,Tables,FEZIBO L-Shaped Standing Desk,389.99,1,0,97.49
+ORD-2024-0074,2024-07-08,2024-07-12,Standard,CUS-014,Nancy Owens,Corporate,United States,Tacoma,Washington,West,OFF-AP-011,Office Supplies,Appliances,Dyson V15 Detect Vacuum,749.99,1,0,224.99
+ORD-2024-0075,2024-07-10,2024-07-14,Second Class,CUS-015,Oscar Palmer,Consumer,United States,Mobile,Alabama,South,TEC-AC-020,Technology,Accessories,Anker 737 Power Bank,109.99,2,0,32.99
+ORD-2024-0076,2024-07-12,2024-07-16,Standard,CUS-016,Patricia Quinn,Home Office,United States,Grand Rapids,Michigan,Central,FUR-CH-021,Furniture,Chairs,SIHOO Doro-C300 Ergonomic Chair,359.99,1,0,89.99
+ORD-2024-0077,2024-07-15,2024-07-19,Standard,CUS-017,Quentin Reed,Consumer,United States,Huntsville,Alabama,South,OFF-PA-013,Office Supplies,Paper,Domtar EarthChoice Paper,28.99,5,0,13.04
+ORD-2024-0078,2024-07-18,2024-07-22,Standard,CUS-018,Rachel Smith,Corporate,United States,Tallahassee,Florida,South,TEC-CO-012,Technology,Copiers,HP Color LaserJet Pro M283fdw,479.99,1,0,143.99
+ORD-2024-0079,2024-07-20,2024-07-24,First Class,CUS-019,Steven Torres,Consumer,United States,Knoxville,Tennessee,South,FUR-FU-018,Furniture,Furnishings,Umbra Prisma Photo Display,25,4,0,10.5
+ORD-2024-0080,2024-07-22,2024-07-26,Standard,CUS-020,Teresa Underwood,Home Office,United States,Worcester,Massachusetts,East,OFF-ST-010,Office Supplies,Storage,Honey-Can-Do 3-Tier Cart,44.99,2,0,19.79
+ORD-2024-0081,2024-07-25,2024-07-29,Standard,CUS-001,Adrian Mitchell,Consumer,United States,Providence,Rhode Island,East,TEC-MA-023,Technology,Machines,Samsung Galaxy Book3 Pro 360,1549.99,1,0,387.49
+ORD-2024-0082,2024-07-28,2024-08-01,Standard,CUS-002,Beth Crawford,Corporate,United States,Newport News,Virginia,South,FUR-BO-012,Furniture,Bookcases,Mainstays 5-Shelf Bookcase,79.99,3,0,23.99
+ORD-2024-0083,2024-08-01,2024-08-05,Standard,CUS-003,Carlos Diaz,Consumer,United States,Brownsville,Texas,Central,OFF-BI-012,Office Supplies,Binders,Mead Five Star Binder,15.99,7,0,7.51
+ORD-2024-0084,2024-08-03,2024-08-07,Second Class,CUS-004,Diana Evans,Home Office,United States,Amarillo,Texas,Central,TEC-PH-024,Technology,Phones,Samsung Galaxy S24,799.99,2,0,175.99
+ORD-2024-0085,2024-08-05,2024-08-09,Standard,CUS-005,Edward Foster,Consumer,United States,Sioux Falls,South Dakota,Central,FUR-CH-022,Furniture,Chairs,Flash Furniture Executive Chair,299.99,1,0,74.99
+ORD-2024-0086,2024-08-08,2024-08-12,Standard,CUS-006,Fiona Grant,Corporate,United States,Glendale,California,West,OFF-SU-010,Office Supplies,Supplies,TICONDEROGA Pencils,8.99,10,0,4.04
+ORD-2024-0087,2024-08-10,2024-08-14,First Class,CUS-007,George Harris,Consumer,United States,Akron,Ohio,East,TEC-MA-024,Technology,Machines,Apple Mac Pro M2 Ultra,6999,1,0,2099.7
+ORD-2024-0088,2024-08-12,2024-08-16,Standard,CUS-008,Hannah Irving,Home Office,United States,Aurora,Colorado,West,FUR-TA-019,Furniture,Tables,Zinus OLB-BF Farmhouse Table,209.99,1,0,52.49
+ORD-2024-0089,2024-08-15,2024-08-19,Standard,CUS-009,Ivan Jackson,Consumer,United States,Irving,Texas,Central,OFF-LA-007,Office Supplies,Labels,Avery File Folder Labels,16.99,5,0,7.98
+ORD-2024-0090,2024-08-18,2024-08-22,Standard,CUS-010,Julia Kim,Corporate,United States,Fremont,California,West,TEC-AC-021,Technology,Accessories,Belkin Thunderbolt 4 Dock,399.99,1,0,119.99
+ORD-2024-0091,2024-08-20,2024-08-24,Second Class,CUS-011,Kevin Lee,Consumer,United States,Plano,Texas,Central,FUR-FU-019,Furniture,Furnishings,FLEXIMOUNTS Overhead Garage Storage,149.99,1,0,52.49
+ORD-2024-0092,2024-08-22,2024-08-26,Standard,CUS-012,Laura Martinez,Home Office,United States,Lincoln,Nebraska,Central,OFF-AP-012,Office Supplies,Appliances,iRobot Roomba j7+,599.99,1,0,179.99
+ORD-2024-0093,2024-08-25,2024-08-29,Standard,CUS-013,Michael Norton,Consumer,United States,Orlando,Florida,South,TEC-PH-025,Technology,Phones,Apple iPhone 16 Pro,1199,3,0,299.75
+ORD-2024-0094,2024-08-28,2024-09-01,Standard,CUS-014,Nancy Owens,Corporate,United States,Chula Vista,California,West,FUR-CH-023,Furniture,Chairs,Steelcase Series 1 Chair,495,2,0,123.75
+ORD-2024-0095,2024-09-02,2024-09-06,Standard,CUS-015,Oscar Palmer,Consumer,United States,Chandler,Arizona,West,OFF-AR-008,Office Supplies,Art,Arteza Acrylic Paint Set,49.99,2,0,23.49
+ORD-2024-0096,2024-09-05,2024-09-09,First Class,CUS-016,Patricia Quinn,Home Office,United States,St. Petersburg,Florida,South,TEC-MA-025,Technology,Machines,Lenovo ThinkPad X1 Yoga Gen 8,1749.99,1,0,437.49
+ORD-2024-0097,2024-09-08,2024-09-12,Standard,CUS-017,Quentin Reed,Consumer,United States,Laredo,Texas,Central,FUR-TA-020,Furniture,Tables,"Need Computer Desk 47""",119.99,2,0,35.99
+ORD-2024-0098,2024-09-10,2024-09-14,Standard,CUS-018,Rachel Smith,Corporate,United States,Corpus Christi,Texas,Central,OFF-PA-014,Office Supplies,Paper,Canson Mixed Media Paper,12.99,4,0,5.84
+ORD-2024-0099,2024-09-12,2024-09-16,Second Class,CUS-019,Steven Torres,Consumer,United States,Henderson,Nevada,West,TEC-CO-013,Technology,Copiers,Epson WorkForce Pro WF-4830,299.99,2,0,89.99
+ORD-2024-0100,2024-09-15,2024-09-19,Standard,CUS-020,Teresa Underwood,Home Office,United States,Riverside,California,West,FUR-FU-020,Furniture,Furnishings,Command Picture Hanging Kit,15.99,6,0,7.19
+ORD-2024-0101,2024-09-18,2024-09-22,Standard,CUS-001,Adrian Mitchell,Consumer,United States,Stockton,California,West,OFF-BI-013,Office Supplies,Binders,Oxford School Binder,11.99,8,0.1,2.15
+ORD-2024-0102,2024-09-20,2024-09-24,First Class,CUS-002,Beth Crawford,Corporate,United States,Birmingham,Alabama,South,TEC-AC-022,Technology,Accessories,Logitech Brio 4K Webcam,199.99,2,0,59.99
+ORD-2024-0103,2024-09-22,2024-09-26,Standard,CUS-003,Carlos Diaz,Consumer,United States,Jersey City,New Jersey,East,FUR-BO-013,Furniture,Bookcases,Bush Furniture Cabot Bookcase,259.99,1,0,77.99
+ORD-2024-0104,2024-09-25,2024-09-29,Standard,CUS-004,Diana Evans,Home Office,United States,Fargo,North Dakota,Central,OFF-ST-011,Office Supplies,Storage,Really Useful Box 64L,29.99,3,0,13.19
+ORD-2024-0105,2024-09-28,2024-10-02,Standard,CUS-005,Edward Foster,Consumer,United States,Anchorage,Alaska,West,TEC-PH-026,Technology,Phones,Google Pixel 9 Pro,999,2,0,219.78
+ORD-2024-0106,2024-10-02,2024-10-06,Standard,CUS-006,Fiona Grant,Corporate,United States,Honolulu,Hawaii,West,FUR-CH-024,Furniture,Chairs,Raynor Eurotech Ergohuman,749.99,1,0,187.49
+ORD-2024-0107,2024-10-05,2024-10-09,Second Class,CUS-007,George Harris,Consumer,United States,Des Moines,Iowa,Central,OFF-SU-011,Office Supplies,Supplies,Gorilla Glue Super Glue,7.99,6,0,3.75
+ORD-2024-0108,2024-10-08,2024-10-12,Standard,CUS-008,Hannah Irving,Home Office,United States,Boise,Idaho,West,TEC-MA-026,Technology,Machines,"Apple MacBook Pro 16"" M3 Pro",2499,2,0,749.7
+ORD-2024-0109,2024-10-10,2024-10-14,Standard,CUS-009,Ivan Jackson,Consumer,United States,Jackson,Mississippi,South,FUR-TA-021,Furniture,Tables,HON 10500 Series Desk,549.99,1,0,137.49
+ORD-2024-0110,2024-10-12,2024-10-16,First Class,CUS-010,Julia Kim,Corporate,United States,Salt Lake City,Utah,West,OFF-AP-013,Office Supplies,Appliances,KitchenAid Artisan Stand Mixer,449.99,1,0,134.99
+ORD-2024-0111,2024-10-15,2024-10-19,Standard,CUS-011,Kevin Lee,Consumer,United States,Wichita,Kansas,Central,TEC-AC-023,Technology,Accessories,"Apple iPad Pro 11"" M4",999,2,0,299.7
+ORD-2024-0112,2024-10-18,2024-10-22,Standard,CUS-012,Laura Martinez,Home Office,United States,Arlington,Texas,Central,FUR-FU-021,Furniture,Furnishings,Sorbus Floating Shelves Set,29.99,4,0,13.19
+ORD-2024-0113,2024-10-20,2024-10-24,Standard,CUS-013,Michael Norton,Consumer,United States,New Orleans,Louisiana,South,OFF-EN-009,Office Supplies,Envelopes,Scotch Bubble Mailer 8.5x11,11.99,10,0,5.39
+ORD-2024-0114,2024-10-22,2024-10-26,Second Class,CUS-014,Nancy Owens,Corporate,United States,Cleveland,Ohio,East,TEC-PH-027,Technology,Phones,Samsung Galaxy S24 FE,649.99,2,0,142.99
+ORD-2024-0115,2024-10-25,2024-10-29,Standard,CUS-015,Oscar Palmer,Consumer,United States,Tampa,Florida,South,FUR-CH-025,Furniture,Chairs,AmazonBasics Mid-Back Office Chair,119.99,3,0,29.99
+ORD-2024-0116,2024-10-28,2024-11-01,Standard,CUS-016,Patricia Quinn,Home Office,United States,Minneapolis,Minnesota,Central,OFF-PA-015,Office Supplies,Paper,Mohawk Via Vellum Paper,42.99,3,0,19.34
+ORD-2024-0117,2024-11-01,2024-11-05,Standard,CUS-017,Quentin Reed,Consumer,United States,Bakersfield,California,West,TEC-MA-027,Technology,Machines,Dell Precision 5680 Workstation,2899,1,0,869.7
+ORD-2024-0118,2024-11-03,2024-11-07,First Class,CUS-018,Rachel Smith,Corporate,United States,Colorado Springs,Colorado,West,FUR-TA-022,Furniture,Tables,Martin Furniture Hartford Desk,499.99,1,0,124.99
+ORD-2024-0119,2024-11-05,2024-11-09,Standard,CUS-019,Steven Torres,Consumer,United States,Raleigh,North Carolina,South,OFF-ST-012,Office Supplies,Storage,Poppin Box Bench,89.99,1,0,39.59
+ORD-2024-0120,2024-11-08,2024-11-12,Standard,CUS-020,Teresa Underwood,Home Office,United States,Virginia Beach,Virginia,South,TEC-AC-024,Technology,Accessories,Twelve South BookArc Stand,49.99,3,0,14.99
+ORD-2024-0121,2024-11-10,2024-11-14,Second Class,CUS-001,Adrian Mitchell,Consumer,United States,Omaha,Nebraska,Central,FUR-BO-014,Furniture,Bookcases,Coaster Home Bookcase,189.99,1,0,56.99
+ORD-2024-0122,2024-11-12,2024-11-16,Standard,CUS-002,Beth Crawford,Corporate,United States,Atlanta,Georgia,South,OFF-BI-014,Office Supplies,Binders,Avery Economy View Binder,9.99,10,0.2,-1.99
+ORD-2024-0123,2024-11-15,2024-11-19,Standard,CUS-003,Carlos Diaz,Consumer,United States,Oakland,California,West,TEC-PH-028,Technology,Phones,Apple iPhone 16,899,3,0,224.75
+ORD-2024-0124,2024-11-18,2024-11-22,Standard,CUS-004,Diana Evans,Home Office,United States,Tulsa,Oklahoma,Central,FUR-FU-022,Furniture,Furnishings,simplehuman Sensor Mirror,199.99,1,0,59.99
+ORD-2024-0125,2024-11-20,2024-11-24,First Class,CUS-005,Edward Foster,Consumer,United States,Mesa,Arizona,West,OFF-LA-008,Office Supplies,Labels,NIIMBOT Label Maker,29.99,2,0,14.09
+ORD-2024-0126,2024-11-22,2024-11-26,Standard,CUS-006,Fiona Grant,Corporate,United States,Lexington,Kentucky,South,TEC-CO-014,Technology,Copiers,Canon MAXIFY GX7020,549.99,1,0,164.99
+ORD-2024-0127,2024-11-25,2024-11-29,Standard,CUS-007,George Harris,Consumer,United States,Stockton,California,West,FUR-CH-026,Furniture,Chairs,Comhoma Office Desk Chair,79.99,4,0,19.99
+ORD-2024-0128,2024-11-28,2024-12-02,Standard,CUS-008,Hannah Irving,Home Office,United States,Newark,New Jersey,East,OFF-AP-014,Office Supplies,Appliances,Cuisinart Coffee Grinder,49.99,2,0,17.49
+ORD-2024-0129,2024-12-01,2024-12-05,Standard,CUS-009,Ivan Jackson,Consumer,United States,Greensboro,North Carolina,South,TEC-MA-028,Technology,Machines,"MacBook Pro 14"" M3 Max",3499,2,0,1049.7
+ORD-2024-0130,2024-12-03,2024-12-07,Second Class,CUS-010,Julia Kim,Corporate,United States,Pittsburgh,Pennsylvania,East,FUR-TA-023,Furniture,Tables,BDI Sequel 20 Lift Desk,1899,1,0,474.75
+ORD-2024-0131,2024-12-05,2024-12-09,First Class,CUS-011,Kevin Lee,Consumer,United States,Lincoln,Nebraska,Central,OFF-AR-009,Office Supplies,Art,Moleskine Art Watercolor Album,29.99,3,0,14.09
+ORD-2024-0132,2024-12-08,2024-12-12,Standard,CUS-012,Laura Martinez,Home Office,United States,Henderson,Nevada,West,TEC-PH-029,Technology,Phones,Google Pixel 9,799,2,0,175.78
+ORD-2024-0133,2024-12-10,2024-12-14,Standard,CUS-013,Michael Norton,Consumer,United States,Buffalo,New York,East,FUR-FU-023,Furniture,Furnishings,Brightroom Storage Tower,69.99,2,0,27.99
+ORD-2024-0134,2024-12-12,2024-12-16,Standard,CUS-014,Nancy Owens,Corporate,United States,Fort Worth,Texas,Central,OFF-SU-012,Office Supplies,Supplies,Stanley Bostitch Electric Sharpener,39.99,1,0,18.79
+ORD-2024-0135,2024-12-15,2024-12-19,Standard,CUS-015,Oscar Palmer,Consumer,United States,Chandler,Arizona,West,TEC-AC-025,Technology,Accessories,Samsung Galaxy Watch Ultra,649.99,1,0,194.99
+ORD-2024-0136,2024-12-18,2024-12-22,Second Class,CUS-016,Patricia Quinn,Home Office,United States,Scottsdale,Arizona,West,FUR-CH-027,Furniture,Chairs,OFM Essentials Racing Chair,159.99,2,0,39.99
+ORD-2024-0137,2024-12-20,2024-12-24,Standard,CUS-017,Quentin Reed,Consumer,United States,Glendale,California,West,OFF-PA-016,Office Supplies,Paper,Canon Photo Paper Pro,19.99,5,0,9.39
+ORD-2024-0138,2024-12-22,2024-12-26,Standard,CUS-018,Rachel Smith,Corporate,United States,St. Louis,Missouri,Central,TEC-MA-029,Technology,Machines,HP ZBook Studio 16 G10,2399,1,0,719.7
+ORD-2024-0139,2024-12-25,2024-12-29,First Class,CUS-019,Steven Torres,Consumer,United States,Laredo,Texas,Central,FUR-BO-015,Furniture,Bookcases,Furinno Turn-N-Tube 5-Tier,49.99,3,0,14.99
+ORD-2024-0140,2024-12-28,2025-01-01,Standard,CUS-020,Teresa Underwood,Home Office,United States,Corpus Christi,Texas,Central,OFF-EN-010,Office Supplies,Envelopes,Amazon Basics Padded Mailers,22.99,12,0,10.34
